@@ -13,8 +13,8 @@ body {
     top: 0;
     position: sticky;
     background: #fff;
-    margin-bottom: 20px;
-    border-bottom: 3px solid orange;
+    margin-bottom: 12px;
+    border-bottom: 3px solid #ef5350;
     z-index: 2;
 }
 
@@ -26,7 +26,7 @@ body {
 .form-control {
     margin-top: 9px;
     margin-left: 30px;
-    border: 1px solid orange !important;
+    border: 1px solid #ef5350 !important;
     border-top-left-radius: 20px !important;
     border-bottom-left-radius: 20px !important;
     border-top-right-radius: 0 !important;
@@ -35,8 +35,8 @@ body {
 }
 
 .input-group-text {
-    background: orange !important;
-    border: 1px solid orange !important;
+    background: #ef5350 !important;
+    border: 1px solid #ef5350 !important;
     margin: 8.5px 10px 3px 0 !important;
     border-top-left-radius: 0 !important;
     border-bottom-left-radius: 0 !important;
@@ -69,7 +69,7 @@ body {
     list-style-type: none;
     padding: 15px 35px;
     text-align: center;
-    background-color: orange;
+    background-color: #ef5350;
     border-left: 1px solid #fff !important;
     cursor: pointer;
 }
@@ -107,5 +107,117 @@ body {
     .menu-bar ul li {
         height: 57px;
         width: 100%;
+    }
+}
+
+/*----------------------SIDE-MENU-----------------------*/
+
+.side-menu {
+    height: 79%;
+    width: 12%;
+    font-size: 14px;
+    float: left;
+    z-index: 2;
+    background-color: #ddd;
+}
+
+.side-menu h7 {
+    margin-left: 14px;
+    font-weight: 600;
+}
+
+.side-menu ul {
+    margin-left: 10px;
+}
+
+.side-menu ul li {
+    list-style-type: none;
+    font-weight: bold;
+    margin-top: 9.5px;
+    cursor: pointer;
+}
+
+.side-menu ul li:hover {
+    color:  #ef5350;
+}
+
+.side-menu ul li ul {
+    display: none;
+    z-index: 10;
+    top: 90px;
+}
+
+.side-menu ul li:hover ul {
+    display: block;
+    height: 400px;
+    margin-left: 11.5%;
+    padding: 0 100px 10px 10px;
+    position: fixed;
+    background: #ececec;
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.5);
+}
+
+.fa-angle-right {
+    margin-top: 4px;
+    margin-right: 5px;
+    float: right;
+}
+
+#menu-btn, #close-btn {
+    font-size: 30px;
+    margin: 10px;
+    color: #ef5350;
+    display: none;
+}
+
+@media only screen and (max-width: 980px){
+    .side-menu{
+        width: 25%;
+        z-index: 20;
+        top: 128px;
+        position: fixed;
+        font-size: 12px;
+        display: none;
+    }
+
+    .side-menu h7 {
+        margin-left: 5px;
+        font-weight: 600;
+    }
+    
+    .side-menu ul li ul {
+        top: 146px;
+    }
+
+    .side-menu ul li:hover ul {
+        margin-left: 23.5%;
+    }
+
+    #menu-btn {
+        display: block;
+    }
+}
+
+/*--------------SLIDER CSS-----------------*/
+
+.slider {
+    width: 87.7%;
+    margin-left: 12.1%;
+    padding: 0 9px;
+
+}
+
+.carousel {
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-indicators{
+    z-index: 1 !important;
+}
+
+@media only screen and (max-width: 980px){
+    .slider{
+        width: 100%;
+        margin-left: 0;
     }
 }
